@@ -1,10 +1,10 @@
+import re
 from datetime import datetime, timezone
 
 import httpx
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
-
 
 api = FastAPI()
 
@@ -26,6 +26,18 @@ async def main(name: str = None):
                 "message":
                     "Missing or empty name parameter"
             })
+
+    # Check that input is a String
+    if not re.fullmatch(r"^[A-Za-z]+([ '-][A-Za-z]+)*$", name):
+        return JSONResponse(
+            status_code=422,
+            content={
+                "status":
+                    "error",
+                "message":
+                    "Name contains invalid characters"
+            }
+        )
 
     # Call genderize API
     result, error = await get_gender_api(name)
