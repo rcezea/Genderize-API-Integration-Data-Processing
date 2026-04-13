@@ -11,7 +11,7 @@ The API processes the raw response from Genderize and returns a structured resul
 ## Base URL
 
 ```
-https://backend.rclancing.dev/
+https://backend.rclancing.dev
 ```
 
 ---
@@ -156,7 +156,7 @@ This ensures compatibility with external grading scripts.
 ### 1. Clone the repository
 
 ```
-git clone [https://github.com/rcezea/Genderize-API-Integration-Data-Processing](https://github.com/rcezea/Genderize-API-Integration-Data-Processing)
+git clone https://github.com/rcezea/Genderize-API-Integration-Data-Processing
 cd Genderize-API-Integration-Data-Processing
 ```
 
