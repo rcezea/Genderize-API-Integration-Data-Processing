@@ -11,7 +11,7 @@ The API processes the raw response from Genderize and returns a structured resul
 ## Base URL
 
 ```
-https://your-deployed-url.com
+https://backend.rclancing.dev/
 ```
 
 ---
@@ -156,8 +156,8 @@ This ensures compatibility with external grading scripts.
 ### 1. Clone the repository
 
 ```
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
+git clone [https://github.com/rcezea/Genderize-API-Integration-Data-Processing](https://github.com/rcezea/Genderize-API-Integration-Data-Processing)
+cd Genderize-API-Integration-Data-Processing
 ```
 
 ### 2. Create a virtual environment
@@ -182,7 +182,7 @@ uvicorn main:api --reload
 ### 5. Test the endpoint
 
 ```
-http://127.0.0.1:8000/api/classify?name=john
+http://backend.rclancing.dev/api/classify?name=john
 ```
 
 ---
@@ -198,4 +198,4 @@ http://127.0.0.1:8000/api/classify?name=john
 ## Author
 
 Richard Ezea
-[your.email@example.com](mailto:rclancing@gmail.com)
+[rclancing@gmail.com](mailto:rclancing@gmail.com)
